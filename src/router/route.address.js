@@ -3,12 +3,10 @@
 
 module.exports = app => {
     var router = require("express").Router();
+    const controller = require("../controller/controller.address");
     
     // GET all Addresses
-    router.get('/', (req, res) => {
-        // call the controller
-        res.json({ message: "You reached the address router"});
-    })
+    router.get('/', controller.findAll);
     
     app.use('/api/address', router);
   };
