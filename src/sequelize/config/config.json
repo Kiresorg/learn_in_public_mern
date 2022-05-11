@@ -1,9 +1,9 @@
 {
-    "development": {
-        "username": "root",
-        "password": "Z^V^Zd3v",
-        "database": "csrdb",
-        "host": "localhost",
-        "dialect": "mysql"
-    }
+  "development": {
+    "username": "root",
+    "password": "UncreativePassword91",
+    "database": "csrdb",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
 }
