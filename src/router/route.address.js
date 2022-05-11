@@ -11,5 +11,8 @@ module.exports = (app) => {
   // GET all Addresses
   router.get('/', controller.findAll)
 
+  // GET address by ID
+  router.get('/:id', controller.findById)
+
   app.use('/api/address', router)
 }

@@ -24,3 +24,22 @@ exports.findAll = (req, res) => {
       })
     })
 }
+
+exports.findById = (req, res) => {
+  const id = req.params.id;
+  Address.findByPk(id)
+    .then(data => {
+      if (data) {
+        res.send(data);
+      } else {
+        res.status(404).send({
+          message: `Cannot find Tutorial with id=${id}.`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Error retrieving Address with id=" + id
+      });
+    });
+};

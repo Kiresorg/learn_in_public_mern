@@ -17,3 +17,6 @@ Content-Type: application/json
     "state": "Wisconsin",
     "zip": "23440" 
 }
+
+### GET address by ID
+GET https://localhost:8080/api/address/1 HTTP/1.1
