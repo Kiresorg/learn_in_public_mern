@@ -9,6 +9,8 @@ const req = require('express/lib/request')
 // create the running web app
 const app = express()
 
+app.use(express.json())
+
 app.get('/', (req, res) => {
   res.json({ message: 'You made it to the root of the app' })
 })
